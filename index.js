@@ -26,8 +26,15 @@ Leap.loop(function(frame) {
   x = x / leap.x * win.x;
   y = y / leap.y * win.y;
 
+  // map to 0, 1
+  z = Math.min(-(z / 60), 1);
+  if (z < 0) z = 0;
+
+  // set the opacity
+  one.style.opacity = z;
+
   // position DOM node
   one.style.top = -y + 'px';
   one.style.left = x + 'px';
 
-})
+});
