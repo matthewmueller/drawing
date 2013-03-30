@@ -1,14 +1,19 @@
 <html>
   <head>
     <title>Drawing</title>
-    <link rel="stylesheet" href="drawing.css">
+    <link rel="stylesheet" href="build/build.css">
   </head>
   <body>
     <h2>Drawing!</h2>
 
-    <div class="one"></div>
+    <!-- <div class="one"></div> -->
 
-    <script src="leap.js"></script>
-    <script src="index.js"></script>
+    <div id="svg"></div>
+
+    <script src="lib/leap.js"></script>
+    <script src="build/build.js"></script>
+    <script>
+      require('drawing');
+    </script>
   </body>
 </html>

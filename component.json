@@ -1,0 +1,16 @@
+{
+  "name" : "drawing",
+  "main" : "lib/index.js",
+  "scripts" : [
+    "lib/index.js",
+    "lib/sketch.js"
+  ],
+  "styles" : [ "drawing.css" ],
+  "dependencies" : {
+    "matthewmueller/svg" : "*",
+    "component/classes" : "*",
+    "matthewmueller/events" : "*",
+    "component/simplify" : "*",
+    "anthonyshort/offset" : "*"
+  }
+}
