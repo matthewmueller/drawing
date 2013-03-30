@@ -1,4 +1,14 @@
+body {
+  margin: 0;
+}
+
 .one {
+  position: relative;
+}
+
+.cross {
   position: absolute;
+  left: -6px;
+  top: -9px;
   color: red;
 }
